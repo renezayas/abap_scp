@@ -6,10 +6,10 @@
         typeNamePlural: 'Travels',
         title: {
             type: #STANDARD,
-            value: 'TravelID'
+            value: 'Travel_ID'
         }}
 }
-annotate view z_c_travel_3776 with
+annotate view ZTB_C_TRAVEL_3776 with
 {
   @UI.facet: [ { id:              'Travel',
                  purpose:         #STANDARD,
@@ -29,14 +29,14 @@ annotate view z_c_travel_3776 with
                       { type: #FOR_ACTION, dataAction: 'copyTravel', label: 'Copy Travel' } ],
       identification: [ { position: 10, label: 'Travel ID' } ] }
   @Search.defaultSearchElement: true
-  TravelID;
+  travel_id;
 
   @UI: {
     lineItem: [{ position: 20, importance: #HIGH }],
     identification: [{ position: 20}],
     selectionField: [{ position: 20 }]}
   @Consumption.valueHelpDefinition: [{ entity: {name: '/DMO/I_Agency', element: 'AgencyID' } }]
-  AgencyID;
+  agency_id;
 
   @UI: {
     lineItem: [{ position: 30, importance: #HIGH }],
@@ -44,49 +44,50 @@ annotate view z_c_travel_3776 with
     selectionField: [{ position: 30 }]}
   @Consumption.valueHelpDefinition: [{ entity: {name: '/DMO/I_Customer', element: 'CustomerID' } }]
   @Search.defaultSearchElement: true
-  CustomerID;
+  customer_id;
 
   @UI: {
     lineItem: [ { position: 40, importance: #MEDIUM } ],
     identification: [ { position: 40 } ] }
-  BeginDate;
+  begin_date;
 
   @UI: {
     lineItem: [{ position: 41, importance: #MEDIUM } ],
     identification: [ { position: 41 } ] }
-  EndDate;
+  end_date;
 
   @UI: {
     identification: [ { position: 42 } ] }
-  BookingFee;
+  booking_fee;
 
   @UI: {
     lineItem: [{ position: 43, importance: #MEDIUM }],
     identification: [{ position: 43, label: 'Total Price'}]}
-  TotalPrice;
+  total_price;
 
   @Consumption.valueHelpDefinition: [{ entity: {name: 'I_Currency', element: 'Currency' } }]
-  CurrencyCode;
+  currency_code;
 
   @UI: {
   lineItem: [ { position: 50, importance: #HIGH },
   { type: #FOR_ACTION, dataAction: 'createTravelByTemplate', label: 'Create Travel by Template' } ],
   identification: [ { position: 45, label: 'Status [O(Open)|A(Accepted)|X(Canceled)]' } ] }
   @Consumption.valueHelpDefinition: [{ entity: { name: '/DMO/I_Overall_Status_VH', element: 'OverallStatus' }}]
-  TravelStatus;
+  travel_status;
 
   //@UI.hidden: true
   //overallstatustext;
 
   @UI: {
       identification:[ { position: 46 } ]  }
-  Description;
+  description;
 
   @UI.hidden: true
-  LastChangedAT;
+  last_changed_at;
   @UI: {
   lineItem: [ { position: 60, importance: #HIGH } ] }
   @EndUserText.label: 'Discount 10%'
   discountprice;
 
+    
 }

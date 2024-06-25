@@ -10,7 +10,7 @@ label: 'Booking Supplement',
 value: 'BookingSupplementID' }
 }
 }
-annotate view Z_C_BOOKSUPPL_3776 with
+annotate view z_c_booksuppl_3776 with
 {
 @UI.facet: [{ id: 'BookingSupplement',
 purpose: #STANDARD,

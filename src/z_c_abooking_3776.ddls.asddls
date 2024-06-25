@@ -1,8 +1,8 @@
 @EndUserText.label: 'Z_C_ABOOKING_3776'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @Metadata.allowExtensions: true
-define view entity Z_C_ABOOKING_3776 
-  as projection on Z_I_BOOKING_3776
+define view entity z_c_abooking_3776 
+  as projection on z_i_booking_3776
 {
   key travel_id         as TravelID,
   key booking_id        as BookingID,       
@@ -20,7 +20,7 @@ define view entity Z_C_ABOOKING_3776
   booking_status        as BookingStatus,
   last_changed_at       as LastChangeAt,
   /* Associations */
-  _TRAVEL               :   redirected to parent Z_C_ATRAVEL_3776, 
+  _Travel               :   redirected to parent z_c_atravel_3776, 
   _Customer,
   _Carrier
 }

@@ -1,8 +1,8 @@
 @EndUserText.label: 'Z_C_TRAVEL_3776'
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @Metadata.allowExtensions: true
-define root view entity Z_C_ATRAVEL_3776 
-       as projection on Z_I_TRAVEL_3776
+define root view entity z_c_atravel_3776 
+       as projection on z_i_travel_3776
 {
     key travel_id       as TravelID,
     @ObjectModel.text.element: [ 'AgencyName' ]
@@ -23,6 +23,6 @@ define root view entity Z_C_ATRAVEL_3776
     overall_status      as TravelStatus,
     last_changed_at     as LastChangedAT,
     /* Associations */
-    _Booking : redirected to composition child Z_C_ABOOKING_3776,
+    _Booking : redirected to composition child z_c_abooking_3776,
     _Customer
 }

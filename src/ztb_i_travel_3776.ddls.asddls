@@ -29,7 +29,7 @@ define root view entity ZTB_I_TRAVEL_3776
       @Semantics.systemDateTime.lastChangedAt: true
       last_changed_at,
       _Booking,
-      //_Agency,
-      _Customer
-      //_Currency
+      _Agency,
+      _Customer,
+      _Currency
 }

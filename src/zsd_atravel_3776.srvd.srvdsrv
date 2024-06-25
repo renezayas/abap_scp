@@ -1,7 +1,7 @@
 @EndUserText.label: 'ZSD_ATRAVEL_3776'
-define service ZSD_ATRAVEL_3776 {
-  expose Z_C_ATRAVEL_3776  as Travel;
-  expose Z_C_ABOOKING_3776 as Booking;
+define service zsd_atravel_3776 {
+  expose z_c_atravel_3776  as Travel;
+  expose z_c_abooking_3776 as Booking;
   expose /DMO/I_Customer   as Passenger;
   expose /DMO/I_Agency     as Agency;
   expose I_Currency        as Currency;

@@ -9,7 +9,7 @@ type: #STANDARD,
 value: 'BookingID' }
 }
 }
-annotate view Z_C_BOOKING_3776 with
+annotate view z_c_booking_3776 with
 {
 @UI.facet: [{ id: 'Booking',
 purpose: #STANDARD,
